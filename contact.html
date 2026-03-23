@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - NA Game Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .textarea-input {
+            width: 100%;
+            padding: 14px;
+            border-radius: 6px;
+            border: 1px solid #334155;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            outline: none;
+            font-size: 16px;
+            transition: 0.3s;
+            font-family: 'Poppins', sans-serif;
+            min-height: 120px;
+        }
+        .textarea-input:focus {
+            border-color: #ff0026;
+            box-shadow: 0 0 10px rgba(237, 231, 233, 0.2);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .contact-btn {
+            background: linear-gradient(to right, #ff0055, #ff003c);
+            color: white;
+            box-shadow: 0 0 15px rgba(234, 57, 33, 0.3);
+            text-shadow: none;
+        }
+        .contact-btn:hover {
+            box-shadow: 0 0 25px rgba(255, 0, 85, 0.6);
+            transform: translateY(-2px);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><span>NA</span> Game Store</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="home.html" class="cart-btn">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <form class="auth-form" style="max-width: 500px;">
+            <h2>Contact <span style="color: #00f0ff;">Me</span></h2>
+            
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Message</label>
+                <textarea class="textarea-input" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="auth-submit-btn contact-btn">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>@ 2026 NA Game Store.</p>
+    </footer>
+</body>
+</html>
